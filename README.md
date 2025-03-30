@@ -1,2 +1,2 @@
 # LA-Project-Repository
-Mai's commission
+May's commission
