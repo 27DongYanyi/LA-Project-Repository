@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <title>Content Manager</title>
-    <script src="https://unpkg.com/netlify-cms-app@^2.0.0/dist/netlify-cms-app.js"></script>
   </head>
   <body>
+    <!-- Load Netlify CMS -->
+    <script src="https://unpkg.com/netlify-cms-app@^2.0.0/dist/netlify-cms-app.js"></script>
+    
+    <!-- Manually init AFTER script loads -->
     <script>
-      window.CMS_MANUAL_INIT = true;
-      CMS.init();
+      window.addEventListener('load', function () {
+        CMS.init();
+      });
     </script>
   </body>
 </html>
